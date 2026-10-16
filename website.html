@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="to-do-container">
+
+        <!-- Create header for to-do list -->
+        <header>
+            <h1>To Do List</h1>
+        </header>
+
+        <!-- Create form for adding tasks -->
+        <form class="task-form">
+            <input type="text" id="task-input" placeholder="Enter your task" required>
+            <button type="button" class="add-button">
+                + 
+            </button>
+        </form>
+
+        <!-- Create section for displaying tasks -->
+        <section class="task-section">
+
+            <h2>Your Tasks</h2>
+
+            <ul class="task-list">
+                <li class="task-item">
+                    <span class="task-text">Sample task 1</span>
+                    <button type="button" class="delete-button">
+                        delete
+                    </button>
+                </li>
+
+                <li class="task-item">
+                    <span class="task-text">Sample task 2</span>
+                    <button type="button" class="delete-button">
+                        delete
+                    </button>
+                </li>
+
+                <li class="task-item">
+                    <span class="task-text">Sample task 3</span>
+                    <button type="button" class="delete-button">
+                        delete
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Create footer for to-do list -->
+            <footer class="to-do-footer">
+                <p>Created by Angela Cheng</p>
+            </footer>
+
+        </section>
+    </main>
+</body>
+</html>
