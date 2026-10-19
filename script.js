@@ -18,8 +18,8 @@ function addtask() {
     const taskText = taskInput.value.trim();
 
     // Prevent empty task 
-    if(taskInput === "") {
-        alert("Please enter a task");
+    if(taskInput.value.trim() === "") {
+        alert("Please enter a task...");
         return;
     }
 

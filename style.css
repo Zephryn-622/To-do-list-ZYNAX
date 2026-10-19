@@ -8,12 +8,12 @@ body {
     min-height: 100vh;
     padding: 40px 20px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #c9d7fc, hsl(210, 40%, 98%));
+    background: linear-gradient(135deg, #7088ff, hsl(210, 40%, 98%));
     color: #1c3365;
 }
 
 /* 2. Main container */
-.container {
+.to-do-container {
     width: 100%;
     max-width: 550px;
     margin: 40px auto;
@@ -37,6 +37,86 @@ h1 {
     margin: 0;
     font-size: clamp(28px, 6vw, 36px);
     text-align: center;
+}
+
+
+/* 3. Header and Logo */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+.logo {
+    width: 112px;
+    height: 112px;
+    flex-shrink: 0;
+    display: block;
+    object-fit: contain;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(30, 41, 59, 0.06);
+}
+
+.header-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.header-eyebrow {
+    margin: 0 0 8px;
+    color: #6366f1;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header-content h1 {
+    margin: 0;
+    color: #1c3365;
+    font-size: clamp(28px, 5vw, 36px);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.header-subtitle {
+    margin: 10px 0 0;
+    color: #6a7b94;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        width: 84px;
+        height: 84px;
+        padding: 6px;
+        border-radius: 16px;
+    }
+
+    .header-eyebrow {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .header-content h1 {
+        font-size: 26px;
+    }
+
+    .header-subtitle {
+        margin-top: 6px;
+        font-size: 12px;
+    }
 }
 
 /* 4. Input form */
@@ -129,4 +209,3 @@ h1 {
     color: #6a7b94;
     text-align: center;
 }
-
