@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     padding: 40px 20px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #dfe6fb, hsl(210, 40%, 98%));
+    background: linear-gradient(135deg, #c9d7fc, hsl(210, 40%, 98%));
     color: #1c3365;
 }
 
